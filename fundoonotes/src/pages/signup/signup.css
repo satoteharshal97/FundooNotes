@@ -1,0 +1,81 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+.container{
+    display:flex;
+    flex-direction:inherit;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    width:100%;
+}
+
+.base {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid rgb(218, 218, 218);
+    margin-top: 30px;
+    width: 50vw;
+    border-radius: 10px;
+    height:80vh;
+    padding: 40px;
+}
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height:100%;
+    width:50%;
+    
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly ;
+    align-items: center;
+    height:100%;
+    width:50%;
+}
+
+.nameinput{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    gap: 1em;
+}
+
+.passwordinput {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    gap: 1em;
+}
+.gmailinput {
+    width:100%;  
+}
+
+.title1 {
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.fname, .lname {
+    padding: 0px
+} 
+
