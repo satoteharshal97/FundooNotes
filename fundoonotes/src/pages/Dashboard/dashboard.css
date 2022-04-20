@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans:wght@300&family=Roboto:ital,wght@0,400;1,100&display=swap');
+
+.notes-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    top: 50px;
+    height: 80vh;
+    width: 80%;
+    position: relative;
+    left: 200px;
+    flex-wrap: wrap;
+    font-family: 'Nunito', sans-serif;
+}

@@ -7,16 +7,21 @@ import ViewStreamIcon from '@mui/icons-material/ViewStream';
 import SettingsIcon from '@mui/icons-material/Settings';
 import AppsIcon from '@mui/icons-material/Apps';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import AddAlertIcon from '@mui/icons-material/AddAlert';
 
-function Header() {
+
+function Header(props) {
+
+     const callFromHeader = () => {
+        props.listenToHeader()
+     }
+
     return (
         <div>
             <div className="header">
                 <div className="first_box">
-                    <div className="items1 item"><MenuIcon/></div>
+                    <div className="items1 item"><MenuIcon onClick= {callFromHeader }/></div>
                     <div className="items2 item"><img src="https://www.gstatic.com/images/branding/product/1x/keep_2020q4_48dp.png"></img></div>
-                    <div className="items3 item">Keep</div>
+                    <div className="items3 item" >Keep</div>
                 </div>
                 <div className="second_box">
                     <div className="items4 item"><SearchIcon /></div>

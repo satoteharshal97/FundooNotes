@@ -13,11 +13,11 @@ function SignIn() {
 
     const [emailerror, setEmailError] = React.useState(false)
     const [emailhelpertext, setEmailHelperText] = React.useState("")
-    
+
 
     const [passworderror, setPasswordError] = React.useState(false)
     const [passwordhelpertext, setPasswordHelperText] = React.useState("")
-    
+
 
 
 
@@ -33,7 +33,7 @@ function SignIn() {
         })
     }
 
-    const onsubmit = () => {
+    const onSubmit = () => {
         let emailregextest = emailRegex.test(signinobj.email)
         let passwordregextest = passwordRegex.test(signinobj.password)
 
@@ -41,7 +41,7 @@ function SignIn() {
             setEmailError(false);
             setEmailHelperText("");
         }
-        else{
+        else {
             setEmailError(true)
             setEmailHelperText("Enter correct email")
         }
@@ -49,16 +49,19 @@ function SignIn() {
             setPasswordError(false);
             setPasswordHelperText("");
         }
-        else{
+        else {
             setPasswordError(true)
             setPasswordHelperText("Enter correct password")
         }
 
-        if(emailregextest === true && passwordregextest == true ){
+        if (emailregextest === true && passwordregextest === true) {
             usersignin(signinobj)
-            .then((res) => {  localStorage.setItem("token", res.data.token ); 
-                            console.log(res) })
-            .catch((error) => { console.log(error) })
+                .then((res) => {
+                    //localStorage.setItem(keyName, keyValue)
+                    localStorage.setItem("token", res.data.token);
+                    console.log(res)
+                })
+                .catch((error) => { console.log(error) })
         }
 
     }
@@ -81,7 +84,7 @@ function SignIn() {
                 <div className="title2">Not your computer? Use Guest mode to sign in privately</div>
                 <div className="buttons">
                     <div className="but"><a href="">Create Account</a></div>
-                    <div className="but"><Button onClick={onsubmit} variant="contained">Next</Button></div>
+                    <div className="but"><Button onClick={onSubmit} variant="contained">Next</Button></div>
                 </div>
             </div>
         </div>

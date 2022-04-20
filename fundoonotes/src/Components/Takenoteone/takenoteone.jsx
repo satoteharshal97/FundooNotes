@@ -1,8 +1,8 @@
 import React from "react";
-import '../Header/header.css'
 import CheckBoxIcon from '@mui/icons-material/CheckBox';
 import BrushIcon from '@mui/icons-material/Brush';
 import ImageIcon from '@mui/icons-material/Image';
+import './takenoteone.css'
 
 
 export default function Takenoteone(props) {
@@ -14,7 +14,7 @@ export default function Takenoteone(props) {
     <div>
         <div  onClick ={switchNote} className="takenoteone">
                 <div className="noteonea">
-                    <div className="item1 new">Title</div>
+                    <div className="item1 new">Take a note ...</div>
                 </div>
                 <div className="noteoneb">
                     <div className="item2 new"><CheckBoxIcon /> </div>

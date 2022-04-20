@@ -1,0 +1,96 @@
+
+.note {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid rgb(211, 210, 210);
+    border-radius: 7px;
+    width: 18vw;
+    height:20vh;
+    
+}
+
+.note-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:90%;
+    font-size: 18px;
+}
+
+.pushpin {
+    display: none;
+}
+
+.note:hover .pushpin{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width:90%;
+    font-size: 18px;
+}
+
+
+.note-description{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width:90%;
+    font-size: 22px;
+}
+
+.note-icons {
+    display: none;
+}
+
+.note:hover .note-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    
+}
+
+.notebox{
+    display: flex;
+    flex-direction: row;
+    justify-content : space-between;
+    align-items: space-around;
+   
+}
+
+
+.popup-title-parent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup-title {
+    border: none;
+    width: 100%;
+    outline: none;
+    font-size: 22px;
+}
+
+.popup-description {
+    border: none;
+    width: 100%;
+    outline: none;
+    font-size: 18px;
+}
+
+.notebox-close {
+    display:flex;
+    flex-direction: row;
+    font-size: 19px;
+    align-items: flex-start;
+    border: none;
+    outline: none;
+}
