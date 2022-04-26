@@ -30,7 +30,7 @@ export default function SimplePopper(props) {
 
     return (
         <div>
-            <ColorLensIcon onClick={handleClick} />
+            <ColorLensIcon onClick={handleClick} style={{fontSize:'18px'}}  />
             <Popper open={open} anchorEl={anchorEl} >
                 <Box   sx={{ border: "1px solid rgb(225, 225, 225)", p: 1, bgcolor: 'background.paper', display:'flex', borderRadius: "5px"  }}>
                     {colorArray.map((color) => (<div id = {color} onClick ={pickColor} style={{

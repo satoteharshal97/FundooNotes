@@ -8,6 +8,7 @@ import './dashboard.css'
 import MiniDrawer from '../../Components/Drawer/drawerOpen';
 
 
+
 function Dashboard() {
 
   const [switchnote, setSwitchNote] = useState(false);
@@ -49,7 +50,6 @@ function Dashboard() {
         await setArray(response.data.data)
       })
       .catch((error) => { console.log(error) })
-
   }
 
   const listenToHeader = () => {

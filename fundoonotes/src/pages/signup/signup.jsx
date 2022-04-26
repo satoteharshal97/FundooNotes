@@ -21,7 +21,7 @@ function SignUp() {
         firstNamehelpertext: "",
         lastNamehelpertext: "",
         emailerror: false,
-        emailhelpertext: "",
+        emailhelpertext: "", 
         passworderror: false,
         passwordhelpertext: "",
 
